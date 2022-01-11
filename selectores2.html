@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /**Combinados descendientes**/
+      div p {
+        color: hotpink;
+      }
+
+      /**Combinados Hijo directo**/
+      div > div {
+        background: indianred;
+      }
+
+      .es {
+        background: lawngreen;
+      }
+      /**Combinados Elemento adyancente**/
+      div + section {
+        background: mediumblue;
+      }
+      /**Combinados de Hermanos**/
+      div ~ p{
+          color: olive;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!---Combinados descendientes--->
+    <!-- <div>
+        <p>Cerquera Motor's</p>
+        <p>taller</p>
+        <p>Especializado</p>
+    </div>-->
+
+    <!---Hijos Directos--->
+    <div>
+      <div>
+        <p>Cerquera Motor's</p>
+        <div class="es">Es</div>
+      </div>
+    </div>
+    <p>clase de selectores</p>
+    <section>Es el mejor taller</section>
+    <div>Jonathan</div>
+  </body>
+</html>
